@@ -173,7 +173,7 @@ class CircularCountDownTimerState extends State<CircularCountDownTimer>
     }
     // For s format
     else if (widget.textFormat == CountdownTextFormat.S) {
-      return '${(duration.inSeconds)}';
+      return '${(duration.inSeconds) + 1}';
     } else {
       // Default format
       return _defaultFormat(duration);
